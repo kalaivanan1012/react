@@ -1,4 +1,26 @@
 .name{
   font-size: large;
+  /* border: 1em; */
+  border-style:double;
+  background-color:rgb(202, 184, 250);
+
+}
+.name:hover{
+  color:rgb(245, 51, 25);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.para{
+  font-size: large;
+  /* border: 1em; */
+  border-style:double;
+  color:rgb(19, 2, 2);
+  background-color:rgb(191, 176, 231);
+
+}
+.para:hover{
+  color:rgb(255, 255, 255);
+  background-color:rgb(90, 39, 233);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }

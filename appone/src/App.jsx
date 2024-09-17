@@ -4,13 +4,17 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
+      <div className='name'>
         <h1>Sooryavarman K</h1>
+        <p className='para'>
+          Sooryavarman Sooryavarman  sooryavarman k
+        </p>
         <h1>Dhuruvachandran K</h1>
+
       </div>
       
     </>
