@@ -1,0 +1,59 @@
+/* .banner{
+height: 2em;
+background-color: cadetblue;
+}
+.navbar{
+
+}
+.navbar-left li{
+display:inline;
+padding-right: 1em;
+}
+.navbar-right{
+
+} */
+.banner {
+    height: 2em;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    overflow: hidden;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-left li {
+    display: inline-block;
+    padding-right: 1em;
+    list-style: none;
+  }
+  
+  /* For zoomed-in or smaller screens */
+  @media (max-width: 1024px) {
+    .navbar-left, .navbar-right {
+      display: none; /* hide the navbar */
+    }
+  
+    /* Show a hamburger menu or breadcrumb for navigation */
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+  /* Styles for hamburger or breadcrumb (optional) */
+  .hamburger {
+    display: none; /* initially hidden, visible on smaller screens */
+  }
+  

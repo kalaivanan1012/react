@@ -1,0 +1,62 @@
+.banner {
+    height: 2em;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .navbar-left ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .navbar-left ul li {
+    padding-right: 1em;
+    white-space: nowrap;
+  }
+  
+  /* Initially hide hamburger menu */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  
+  /* Hide the navbar and show hamburger on smaller screens or zoom */
+  @media (max-width: 1024px) {
+    .navbar-left ul {
+      display: none; /* Hide the navbar items */
+    }
+  
+    .hamburger {
+      display: block; /* Show the hamburger */
+    }
+  
+    /* Show the menu when hamburger is clicked */
+    .navbar-left.show ul {
+      display: block;
+      position: absolute;
+      top: 2.5em;
+      left: 0;
+      width: 100%;
+      background-color: cadetblue;
+      padding: 0;
+      margin: 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .navbar-left.show ul li {
+      padding: 1em;
+      border-bottom: 1px solid white;
+    }
+  }
+  
