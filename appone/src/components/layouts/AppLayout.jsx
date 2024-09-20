@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../../styles/AppLayout.css';
+import { Home } from '../Home';
 
 function AppLayout() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,11 +27,8 @@ function AppLayout() {
           ☰
         </div>
       </div>
-      <div>
-        <h1>
-
-                sooryavarman k
-        </h1>
+      <div className='page'>
+        <Home/>
       </div>
     </>
   );
