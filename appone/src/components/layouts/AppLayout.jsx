@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../../styles/AppLayout.css';
+import '../../index.css';
 import { Home } from '../Home';
 
 function AppLayout() {
@@ -8,14 +9,16 @@ function AppLayout() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
+  let fonts="fonts";
   return (
     <>
       <div className="banner">
         <div className="navbar">
           <div className={`navbar-left ${menuOpen ? 'show' : ''}`}>
-            <ul>
-              <li>Home</li>
+            <ul className={fonts}>
+              <li>
+                    Home
+              </li>
               <li>Asset Management</li>
               <li>Project Management</li>
               <li>Members Management</li>
