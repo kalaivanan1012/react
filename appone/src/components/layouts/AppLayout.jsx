@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../../styles/AppLayout.css';
 import '../../index.css';
 import { Home } from '../Home';
+import { Members } from '../Members';
 
 function AppLayout() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,6 +33,7 @@ function AppLayout() {
       </div>
       <div className='page'>
         <Home/>
+        <Members name="Muthusamy A" dob="09-10-1960" occupation="Consultant"/>
       </div>
     </>
   );
