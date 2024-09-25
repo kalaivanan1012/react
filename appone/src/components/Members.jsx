@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/Home.css"
-
+import {Proptypes} from "prop-types";
 
 export const Members = (member) => {
   let customCss="style1";
@@ -8,18 +8,29 @@ export const Members = (member) => {
     
     <div className='header'>
         <h3 className={customCss}>Members</h3>
-        <p className='pagecontent'>
           <table>
+            <thead>
             <th>Name</th>
             <th>DOB</th>
             <th>Occupation</th>
+            <th>Age</th>
+            </thead>
+            <tbody>
             <tr>
                <td>{member.name}</td>
-               <td>{member.dob}</td>
+               <td>{member.dob.toLocaleDateString()}</td>
                <td>{member.occupation}</td>
-            </tr>  
+               <td>{member.age}</td>
+            </tr> 
+            </tbody>
           </table>
-        </p>
-    </div>
-  )
+        </div>
+    
+  );
+}
+Member.Proptypes={
+  name:Proptypes.string,
+  dob:Proptypes.toLocaleDateString,
+  occupation:Proptypes.string,
+  age:Proptypes.number,
 }

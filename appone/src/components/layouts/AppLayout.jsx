@@ -33,7 +33,7 @@ function AppLayout() {
       </div>
       <div className='page'>
         <Home/>
-        <Members name="Muthusamy A" dob="09-10-1960" occupation="Consultant"/>
+        
       </div>
     </>
   );
