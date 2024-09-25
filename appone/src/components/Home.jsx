@@ -19,13 +19,15 @@ export const Home = () => {
 
 
     <div className='header'>
-        <h3 className={customCss}>Home</h3>
-        <p className='pagecontent'>
+         <h3 className={customCss}>Home</h3>
+        {/*<p className='pagecontent'> */}
           
         <Members name="Muthusamy A" dob={new Date("1960-10-09")} occupation="Consultant" age={calculateAge(new Date("1960-10-09"))}/>
         <Members name="Vasantha M" dob={new Date("1964-08-24")} occupation="Home Maker" age={calculateAge(new Date("1964-08-24"))}/>
         <Members name="Kalaivanan M" dob={new Date("1989-12-10")} occupation="IT-Engineer" age={calculateAge(new Date("1989-12-10"))}/>
-        </p>
+        <Members name="Vimala E" dob={new Date("1996-01-30")} occupation={"Home Maker"} age={calculateAge(new Date("1996-01-30"))}/>
+        <Members/>
+        {/* </p> */}
     </div>
   )
 }
